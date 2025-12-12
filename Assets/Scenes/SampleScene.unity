@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _monoscopic: 0
   _sharpenType: 0
-  _enableDynamicResolution: 0
+  _enableDynamicResolution: 1
   minDynamicResolutionScale: 1
   maxDynamicResolutionScale: 1
   quest2MinDynamicResolutionScale: 0.7
@@ -2372,7 +2372,7 @@ MonoBehaviour:
   requestEyeTrackingPermissionOnStartup: 0
   requestScenePermissionOnStartup: 1
   requestRecordAudioPermissionOnStartup: 0
-  requestPassthroughCameraAccessPermissionOnStartup: 0
+  requestPassthroughCameraAccessPermissionOnStartup: 1
   _localDimming: 1
   _trackingOriginType: 1
   usePositionTracking: 1
@@ -8581,6 +8581,67 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.016699273, y: -0.03636414, z: -0.018954389}
     m_Extent: {x: 0.05463389, y: 0.050220694, z: 0.051451057}
   m_DirtyAABB: 0
+--- !u!1 &1655246534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655246535}
+  - component: {fileID: 1655246536}
+  m_Layer: 0
+  m_Name: XRHandDraw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655246535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655246534}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.09453344, y: 0.07934618, z: 0.045170784}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655246536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655246534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcfb03764752164f8bdcf87b7db5df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: 2
+  controllerTip: {fileID: 1520739849}
+  trackingHand: {fileID: 2131101546}
+  minFingerPinchStrength: 0.5
+  minDistanceBeforeNewPoint: 0.004
+  tubeDefaultWidth: 0.01
+  tubeSides: 8
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  defaultLineMaterial: {fileID: 0}
+  enableGravity: 0
+  colliderTrigger: 0
+  eraseRadius: 0.02
+  tubeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  timeBeforeEraseStarts: 0.5
+  handMoveSpeedThreshold: 0.01
 --- !u!1 &1659454220
 GameObject:
   m_ObjectHideFlags: 0
@@ -11357,3 +11418,4 @@ SceneRoots:
   - {fileID: 138200541}
   - {fileID: 1823226129}
   - {fileID: 1116280221}
+  - {fileID: 1655246535}
